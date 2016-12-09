@@ -1,0 +1,10 @@
+<div>
+<ul>
+<li ng-repeat="list in narrowList.found">Name:{{list.name}},<br/>Short-name:{{list.short_name}},<br/>
+description:{{list.description}}
+<button ng-click="narrowList.removeItem($index)">Don't want this</button> <br/>
+</li>
+</ul>
+<br/> 
+<h3 ng-if="narrowList.foundNo()" style="color:red;margin-right:600px;margin-top:20px">"Nothing found".</h3>
+</div>
