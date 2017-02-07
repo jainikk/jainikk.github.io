@@ -21,7 +21,7 @@ function MenuDataService($q, $timeout,$http) {
 
       $timeout(function() {
 
-      $http.get('http://davids-restaurant.herokuapp.com/categories.json')
+      $http.get('https://davids-restaurant.herokuapp.com/categories.json')
             .success(function (data, status, headers, config) {
             deferred.resolve(data);
             })
